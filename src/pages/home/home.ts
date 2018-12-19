@@ -1,3 +1,4 @@
+import { LugarPage } from './../lugar/lugar';
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
@@ -9,6 +10,9 @@ export class HomePage {
 
   constructor(public navCtrl: NavController) {
 
+  }
+  irALugar(){
+    this.navCtrl.push(LugarPage);
   }
 
 }
